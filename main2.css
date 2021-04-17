@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	background-color:#f6f5f5;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 	margin:0px;
 	padding:0px;
 
@@ -20,6 +21,8 @@ section{
 	background-image:url("/Portfolio/bg.png");
 	background-size:cover;
 	background-repeat:no-repeat;
+	background-color: #485461;
+	background-blend-mode: multiply;
 	position: relative;
 }
 nav {
@@ -34,22 +37,34 @@ nav {
 }
 nav ul{
 	display: flex;
+
 }
 .toggle{
 	display: none;
 }
 
 nav ul li a{
-	margin:30px;
+	margin: 50px;
+	margin-left: -20px;
 	font-family:myriad pro regular;
 	color:#505050;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight:700;
 }
+a.index-h1{
+    font-size: 18px;
+    font-weight: 900;
+    position: absolute;
+    left: 90%;
+    top: -30%;
+
+}
+
 .logo{
 	font-family:RoadTest;
 	color:#000000;
 	font-size: 22px;
+	transform: translateX(-30%);
 }
 .active{
 	color:#2d2a2a;
@@ -58,11 +73,223 @@ nav ul li a{
 .model{
 	height:530px;
 	position:absolute;
-	bottom:40px;
-	left:75%;
-	transform: translateX(-75%) translateY(100%);
+	bottom: 0%;
+	left:57%;
+	align-items: center;
 
 }
+
+/* text container */
+
+#text-container{
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    width: 250px;
+    height: 100px;
+    transform: translateY(200%);
+    margin: 120px auto 0 auto;
+    overflow: hidden;
+}
+
+#wrapper p{
+    height: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Times New Roman",Times, serif;
+    margin-block-start: -1em;
+
+}
+
+#nameDiv, #name2Div{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#nameDiv {
+    background: transparent;
+    color: black;
+}
+
+#nameDiv:hover{
+    margin-top: -110px;
+}
+
+
+#name2Div {
+    background: transparent;
+    color: black;
+}
+
+.fancy-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+}
+
+
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 36px;
+    width: 50%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after{
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+
+#text-container2{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    width: 250px;
+    height: 100px;
+    transform: translateY(200%);
+    margin: 120px auto 0 auto;
+    overflow: hidden;
+}
+
+#wrapper2 p{
+    height: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Times New Roman",Times, serif;
+    margin-block-start: -1em;
+
+}
+
+#nameDiv3, #name4Div{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#nameDiv3 {
+    background: transparent;
+    color: black;
+}
+
+#nameDiv3:hover{
+    margin-top: -110px;
+}
+
+
+#nameDiv4 {
+    background: transparent;
+    color: black;
+}
+
+.fancy-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+}
+
+
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 36px;
+    width: 50%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after{
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+
+
+#text-container3{
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 250px;
+    height: 100px;
+    transform: translateY(200%);
+    margin: 120px auto 0 auto;
+    overflow: hidden;
+}
+
+#wrapper3 p{
+    height: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Times New Roman",Times, serif;
+    margin-block-start: -1em;
+
+}
+
+#nameDiv5, #nameDiv5{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#nameDiv5 {
+    background: transparent;
+    color: black;
+}
+
+#nameDiv5:hover{
+    margin-top: -110px;
+}
+
+
+#nameDiv6 {
+    background: transparent;
+    color: black;
+}
+
+.fancy-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+}
+
+
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 36px;
+    width: 50%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after{
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+
+
 .text-container p:nth-child(1){
 	font-family: calibri;
 	font-weight:bold;
@@ -88,6 +315,7 @@ nav ul li a{
 	margin:45px 0px 25px;
 	line-height:0px;
 	transform: translateX(-15%);
+
 }
 .text-container button{
 	width:130px;
@@ -122,6 +350,9 @@ button:active{
 	transform:scale(0.5);
 }
 
+/* End Of text container */
+
+
 .about-container{
     width: 90%;
     height: 330px;
@@ -133,6 +364,8 @@ button:active{
     transform: translateX(3%)  translateY(50%);
     justify-content: space-evenly;
     align-items: center;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
 .about-text{
@@ -154,7 +387,7 @@ button:active{
 .about-text p:nth-child(1){
     font-family: calibri;
     font-weight: bold;
-    color: #403e3e;
+    color: #FFFFFF;
     font-size: 30px;
     line-height: 0px;
 
@@ -163,7 +396,7 @@ button:active{
 .about-text p:nth-child(2){
     font-family: calibri;
     font-weight: bold;
-    color: #403e3e;
+    color: #FFFFFF;
     font-size: 13px;
     line-height: 5px;
 
@@ -189,19 +422,21 @@ button:active{
 
 .services{
     height: 600px;
-    background-color: #FFFFFF;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
     padding: 2% 10% 0px 10%;
 
 }
 div.services-text{
     transform: translateY(100%);
     width: 50%;
+    color: #FFFFFF;
 }
 div.services-text p:nth-child(1){
      font-family: "Times New Roman",Times, serif;
      font-weight: bold;
      font-size: 30px;
-     color: #000000;
+     color: #FFFFFF;
 
 }
 div.services-text p:nth-child(2){
@@ -306,6 +541,9 @@ box-3 button{
      justify-content: center;
      align-items: center;
      transform: translateY(100%);
+     margin-left: -5%;
+
+
 
 
 }
@@ -315,7 +553,8 @@ box-3 button{
     font-size: 20px;
     font-family: calibri;
     font-weight: bold;
-    margin-left: -12%;
+    margin-left: -1%;
+    text-align: center;
 
 }
 
@@ -327,7 +566,8 @@ box-3 button{
     border: none;
     font-size: 14px;
     font-weight: bold;
-    margin-left: -12%;
+    margin-left: -1%;
+    text-align: center;
 }
 
 
@@ -339,6 +579,7 @@ footer{
     align-items: center;
     position: relative;
     transform: translateY(100%);
+    margin-left: -1%;
 
 }
 
@@ -449,7 +690,7 @@ div.social-b i{
 
 
 .name-container{
-    height: 100%;
+    height: 250%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -459,25 +700,30 @@ div.social-b i{
 
 }
 
-.img{
+.pic{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    bottom: 50%;
-    position: absolute;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
+
+
 }
 
 
 .name-text{
+    display: block;
     color: #2b2b2b;
     font-family: "Times New Roman",Times, serif;
     font-size: 20px;
     padding: 2px;
     background-color: #FFFFFF;
-    transform: translateY(50%);
-    position: relative;
     padding-bottom: 20px;
+    width: 70%;
+    transform: translateX(22%);
+    line-height: 2.5em;
+    margin-bottom: 32px;
+
+
 
 }
 
@@ -487,25 +733,51 @@ div.Heading{
     font-size: 20px;
     padding: 2px;
     position: absolute;
-    top: -20%;
+    top: -27%;
     left: 33%;
 
 }
+
 
 .h2{
     color: #2b2b2b;
     font-family: "Times New Roman",Times, serif;
     font-size: 20px;
-
 }
 
 p2{
     font-family: "Times New Roman",Times, serif;
     font-size: 25px;
-    max-height: 110%;
-    justify-content: center;
+    line-height: 2.5em;
+    margin-bottom: 32px;
 }
 
+.firstP{
+    font-size: 25px;
+    line-height: 5%;
+    margin-bottom: 32px;
+}
+
+.secondP{
+    font-size: 25px;
+    line-height: 2.5em;
+    margin-bottom: 32px;
+}
+
+.thirdP{
+    font-size: 25px;
+    line-height: 2.5em;
+    margin-bottom: 32px;
+}
+
+hr{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.index-h1{
+     color: black;
+}
 
 
 
@@ -526,10 +798,12 @@ h1{
    font-family: "Times New Roman",Times, serif;
    font-size: 40px;
 
+
 }
 
 .contact2-container {
-    transform: translateY(50%);
+    transform: translateX(50%);
+    width: 50%;
 }
 
 .contact2-container p:nth-child(1){
@@ -564,58 +838,94 @@ h1{
 
 }
 
-.button{
-   text-align: center;
-   translate: translateX(50%);
+ .button2 {
+   position: absolute;
+   left: 45%;
 }
 
-#wrapper{
-    width: 250px;
-    height: 100px;
-    border: thick green solid;
-    transform: translateY(200%);
-    margin: 120px auto 0 auto;
-    overflow: hidden;
+ .button3{
+   position: absolute;
+   left: 45%;
+   bottom: -15.2%;
 }
 
-#wrapper p{
-    height: 100%;
-    font-size: 20px;
-    font-family: "Times New Roman",Times, serif;
-    margin-block-start: -1em;
+ .button4{
+   position: absolute;
+   left: 45%;
+   bottom: -25%;
 }
 
-
-
-#redDiv, #blueDiv {
-    width: 250px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
+.index-a{
+    transform: translateX(89%);
+    font-weight: bold;
+    color: #000000;
 }
 
-#redDiv {
-    background: black;
-    color: white;
+a{
+     font-size: 18px;
+     font-weight: bold;
+     color: black;
 }
-
-#redDiv:hover{
-    margin-top: -100px;
-}
-
-
-
-
-#blueDiv {
-    background: black;
-    color: white;
-}
-
-
 
 
 
 /* End Of Contact Page */
+
+
+/* Read More Page */
+
+.carousel-cell{
+     height: 465px;
+     width: 400px;
+     padding: 0;
+     margin: 0;
+}
+
+.w3-image{
+    height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+.readme_container{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 550px;
+    bottom: -40%;
+    font-family: ;
+}
+
+.carousel{
+
+}
+
+p.p-index{
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    position: absolute;
+    bottom: 20px;
+    font-weight: 900;
+    width: 350px;
+}
+
+.em-white_check_mark{
+    padding: 2px;
+    transform: translateX(5%);
+}
+
+
+
+
+
+
+
+
+/* End Of Read More Page */
+
+
 
 
 
@@ -637,7 +947,16 @@ h1{
        align-items: center;
        margin-left: auto;
        margin-right: auto;
-       top: -79%;
-       left: 80%;
+       top: 10.1%;
+       left: 56%;
     }
 }
+
+
+@media (min-width: 600px) {
+    .fancy-line{
+       clear: both;
+       visibility: hidden;
+    }
+}
+
